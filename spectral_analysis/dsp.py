@@ -221,7 +221,7 @@ def extract_spec_features(fx, sampling_freq, fft_length, filter_type, filter_cut
     return features, labels, spec_powers.tolist(), freqs.tolist()
 
 
-def generate_features(implementation_version, draw_graphs, raw_data, axes, sampling_freq, scale_axes, input_decimation_ratio,
+def generate_features(implementation_version = 1, draw_graphs, raw_data, axes, sampling_freq, scale_axes, input_decimation_ratio,
                       filter_type, filter_cutoff, filter_order, analysis_type, fft_length, spectral_peaks_count,
                       spectral_peaks_threshold, spectral_power_edges, do_log, do_fft_overlap,
                       wavelet_level, wavelet, extra_low_freq):
